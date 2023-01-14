@@ -73,6 +73,27 @@ body{
 .botones:hover{
 	cursor: pointer;
 }
+/*Diseño del mensaje emrgente*/
+.cont_emergente{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .95);
+	position: fixed;
+	left: 0;
+	top: 0;
+	color: #fff;
+	display: none;
+	justify-content: center;
+}
+.emergente{
+	width: 90%;
+	background-color: #888;
+	text-align: center;
+	height: 100px;
+	box-shadow: 5px 10px 15px;
+	border-radius: 15px;
+	margin-top: 80%;
+}
 @media(min-width: 300px){
 	.logo{
 		width: 70px;
@@ -84,6 +105,15 @@ body{
 	}
 	.cont_productos{
 		width: 295px;
+	}
+	.emergente{
+		margin-top: 50%;
+	}
+}
+@media(min-width: 500px){
+	.emergente{
+		width: 440px;
+		margin-top: 30%;
 	}
 }
 @media(min-width: 650px){
@@ -113,5 +143,8 @@ body{
 		font-size: 1rem;
 		margin-top: 10px;
 		padding: 3px 5px;
+	}
+	.emergente{
+		margin-top: 20%;
 	}
 }
